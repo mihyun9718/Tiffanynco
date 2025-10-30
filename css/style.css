@@ -69,32 +69,67 @@ body {
     font-size: 0px;
 }
 
+
+
 @media (max-width:768px) {
+
     .header {
-        position:relative;
-        max-width: 390px;
-        height: 75px;
-        margin: 0 auto;
+        max-width: 300px;
+        height: auto;
+        position: relative;
+        margin-left: 10px;
     }
+
+
+    .header {
+        background-color: rgb(255, 255, 255, 0.3);
+        border-bottom: 0px solid rgba(22, 22, 22, 0.3);
+    }
+    
+    .header.on {
+        background-color: rgb(255, 255, 255, 1);
+    }
+    
 
     .header .inner {
+        padding: 0rem;
+    }
+    
+    
+    .header .inner {
         max-width: 390px;
-        height: 75px;
-        margin: 0 auto;
+        margin-left: 0px;
+        height: 60px;
+        margin: auto;
     }
 
-    .header h1 {
-        margin-right: 10%;
+    
+    
+    .header .inner h1 img {
+        max-width: 70px;
+        margin: auto;
+    }
+    
+    .header .inner .left {
+        gap: 8px;
+        color: #333;
+        margin-left: 70px;
+    }
+
+
+    .header .left {
+        font-size: 0px;
+    }
+
+    .header .btn {
+        display: none;
     }
 
     .header .gnb>ul {
-      display: none;
+        flex-direction: column;
+        gap: 20px;
     }
 
-    .header .inner h1 img {
-        width: 100%;
-        padding: 5px;
-    }
     .header .gnb {
         display: block;
         position: fixed;
@@ -102,13 +137,13 @@ body {
         left: -1000%;
         z-index: 1000;
 
-        padding: 80px 30px 0 32px;
+        padding: 100px 28px 0 28px;
         transition: 0.2s;
 
         margin-left: 0;
 
         background: #333;
-        width: calc(100% - 100px);
+        width: calc(100% - 50px);
         height: 100vh;
 
         color: #fff;
@@ -117,8 +152,7 @@ body {
     .header .inner .gnb>ul>li>a {
         display: block;
         color: #fff;
-        line-height: 18px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        line-height: 15px;
         font-size: 14px;
         font-weight: 400;
     }
@@ -126,16 +160,15 @@ body {
     .mopen {
         display: block;
         position: fixed;
-        top: 0%;
-        left: 50%;
-        transform: translate(130px, 20px);
+        top: 1%;
+        left: 85%;
         z-index: 1000;
 
         width: 43px;
         height: 38px;
 
         background: #fff;
-        border: 1px solid #333;
+        border: 1px solid #ddd;
 
         font-size: 0;
     }
