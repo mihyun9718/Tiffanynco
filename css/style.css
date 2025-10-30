@@ -102,13 +102,6 @@ body {
         height: 60px;
         margin: auto;
     }
-
-    
-    
-    .header .inner h1 img {
-        max-width: 70px;
-        margin: auto;
-    }
     
     .header .inner .left {
         gap: 8px;
@@ -1520,3 +1513,4 @@ gap: 30px;
     font-weight: 500;
 }
 }
+
